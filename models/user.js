@@ -21,13 +21,14 @@ let UserSchema = new Schema({
         default: 'user',
         type: String, //we can consider using array of strings as in case user has several roles at the same time
         requierd: true
-    },
-    devices: [
-        {
-            id: '',
-            permissions:[]
-        }
-    ]
+    }
+    // devices: [
+    //     {
+    //         type: Schema.Types.ObjectId,
+    //         ref: "Device",
+    //         required: false
+    //     }
+    // ]
 });
 
 //It's impossible to move that part of code to another directory, because it's Middleware for schema
